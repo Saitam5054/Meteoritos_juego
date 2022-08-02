@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/engineCircular_000.ogg-a3de3e8d723062b3e141e1f66639b1f8.oggstr"
+
+[deps]
+
+source_file="res://Juego/Proyectiles/Laser/engineCircular_000.ogg"
+dest_files=[ "res://.import/engineCircular_000.ogg-a3de3e8d723062b3e141e1f66639b1f8.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
