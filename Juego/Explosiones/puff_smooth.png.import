@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/proyectil_enemigo.png-1ce06708a8e9c583d16b2b628197c612.stex"
+path="res://.import/puff_smooth.png-695e17480c064abad69cf209a787106f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Juego/Proyectiles/proyectil_enemigo.png"
-dest_files=[ "res://.import/proyectil_enemigo.png-1ce06708a8e9c583d16b2b628197c612.stex" ]
+source_file="res://Juego/Explosiones/puff_smooth.png"
+dest_files=[ "res://.import/puff_smooth.png-695e17480c064abad69cf209a787106f.stex" ]
 
 [params]
 

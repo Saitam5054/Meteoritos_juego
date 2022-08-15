@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/player_orange.png-f034c6546d7944de1f5cafd8a5100190.stex"
+path="res://.import/sparkle.png-3f6a472509d842647289ac4c5c502f1d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Juego/Nave/Player/player_orange.png"
-dest_files=[ "res://.import/player_orange.png-f034c6546d7944de1f5cafd8a5100190.stex" ]
+source_file="res://Juego/Explosiones/sparkle.png"
+dest_files=[ "res://.import/sparkle.png-3f6a472509d842647289ac4c5c502f1d.stex" ]
 
 [params]
 
@@ -28,7 +28,6 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
-process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
