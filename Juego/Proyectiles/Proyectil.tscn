@@ -22,5 +22,6 @@ rotation = 1.5708
 modulate = Color( 0.709804, 0, 1, 1 )
 scale = Vector2( 2.05518, 0.35429 )
 
-[connection signal="area_entered" from="." to="." method="_on_Proyectil_area_entered"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
