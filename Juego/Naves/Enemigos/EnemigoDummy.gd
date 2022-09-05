@@ -12,4 +12,5 @@ func recibir_danio(danio: float) -> void:
 		queue_free()
 
 func _process(delta: float) -> void:
+	rotate(deg2rad(-50 * delta))
 	$Canion.set_esta_disparando(true)

@@ -1,3 +1,4 @@
+#Player.gd
 class_name Player
 extends RigidBody2D
 
@@ -55,11 +56,11 @@ func _unhandled_input(event: InputEvent) -> void:
 		or event.is_action_released("mover_atras")):
 			motor_sfx.sonido_off()
 
-func _integrate_forces(state: Physics2DDirectBodyState) -> void:
+func _integrate_forces(_state: Physics2DDirectBodyState) -> void:
 	apply_central_impulse(empuje.rotated(rotation))
 	apply_torque_impulse(dir_rotacion * potencia_rotacion)
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	player_input()
 
 ## Metodos Custom
@@ -128,3 +129,9 @@ func destruir() -> void:
 func _on_AnimationPlayer_animation_finished(anim_name: String) -> void:
 	if anim_name == "spawn":
 		controlador_estados(ESTADO.VIVO)
+
+
+func _on_body_entered(body: Node) -> void:
+	if body is Meteorito:
+		body.destruir()
+		destruir()

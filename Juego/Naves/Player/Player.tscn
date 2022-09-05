@@ -54,9 +54,15 @@ z_as_relative = false
 collision_mask = 23
 physics_material_override = ExtResource( 2 )
 gravity_scale = 0.0
-linear_damp = 1.0
-angular_damp = 4.0
+contacts_reported = 2
+contact_monitor = true
+can_sleep = false
+linear_damp = 1.5
+angular_damp = 4.5
 script = ExtResource( 3 )
+potencia_motor = 18
+potencia_rotacion = 260
+hitpoints = 20.0
 
 [node name="Sprite" type="Sprite" parent="."]
 rotation = 1.5708
@@ -70,13 +76,13 @@ shape = SubResource( 1 )
 position = Vector2( -1.12373, 0 )
 proyectil = ExtResource( 6 )
 cadencia_disparo = 0.25
-velocidad_proyectil = 1600
+velocidad_proyectil = 1500
 
 [node name="PuntoIzquierdo" parent="Canion" index="0"]
-position = Vector2( 0, -30 )
+position = Vector2( 0, -28 )
 
 [node name="PuntoDerecho" parent="Canion" index="1"]
-position = Vector2( 0, 30 )
+position = Vector2( 0, 28 )
 
 [node name="LaserBeam2D" parent="." instance=ExtResource( 5 )]
 position = Vector2( 37.8322, 0 )
@@ -105,6 +111,7 @@ bus = "SFX"
 
 [node name="Escudo" parent="." instance=ExtResource( 10 )]
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 
 [editable path="Canion"]

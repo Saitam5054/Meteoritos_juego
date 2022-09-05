@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/escudo_3.png-73d6e0c322ec6040c866e7ccdc55518e.stex"
+path="res://.import/meteorito_dim_1.png-5cfcd349a00bb1585f7eb352b15463b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Juego/Naves/Player/Escudo/escudo_3.png"
-dest_files=[ "res://.import/escudo_3.png-73d6e0c322ec6040c866e7ccdc55518e.stex" ]
+source_file="res://meteorito_dim_1.png"
+dest_files=[ "res://.import/meteorito_dim_1.png-5cfcd349a00bb1585f7eb352b15463b1.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
